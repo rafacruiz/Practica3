@@ -23,6 +23,23 @@ Después realizamos la instalación.
   ![instalacion](https://dl.dropbox.com/s/68p29yt0eux56w5/virtual.png)
   
 
+Una vez tenemos VirtualBox instalado y en funcionamiento, empezamos con la instalación de los Sistemas Operativos:
+
+  Ubuntu Server
+  
+  ![Ubuntu](https://dl.dropbox.com/s/f1gu5vsoave6hu5/instSOUb.png)
+  
+  Fedora
+  
+  ![Fedora]()
+  
+
+Para poder utilizar los ejemplos instalamos Python, Webpy y Pymongo para su correcto funcionamiento y analizar el rendimiento.
+  
+  
+  
+  
+  
 
 ##Configuración máquinas virtuales
 
