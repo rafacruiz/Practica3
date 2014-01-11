@@ -1,0 +1,100 @@
+$def with(a,b,c,d,e)
+<html>
+<head>
+	<title>Estadisticas - Diseño de Aplicaciones para Internet</title>
+	<meta charset="utf-8">
+	<link href="static/css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+	    
+	    var uno = $a; 
+	    var dos = $b; 
+	    var tres = $c; 
+	    var cuatro = $d;
+	    var cinco = $e;
+
+	    google.load("visualization", "1", {packages:["corechart"]});
+	    google.setOnLoadCallback(drawChart);
+	    function drawChart() {
+	      var data = google.visualization.arrayToDataTable([
+	      ['Task', 'Hours per Day'],
+	      ['Inicio',  	uno],
+	      ['About',   	dos],
+	      ['Mis Datos',   tres],
+	      ['Modificar', cuatro],
+	      ['Mapa',	     cinco],
+	      ]);
+
+	    var options = {
+	    title: 'Sección que más visitas'
+	    };
+
+	    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+	    chart.draw(data, options);
+	    }
+	</script>
+</head>
+<body>
+  <div id="background">
+		<div id="page">
+			<div id="header"> <a href="inicio" id="logo"><img src="static/images/logo.png" width="295" height="55" alt="Python"></a>
+				<ul class="navigation">
+					<li>
+						<a href="inicio">Home</a>
+					</li>
+					<li>
+						<a href="show">Mis datos</a>
+					</li>
+					<li>
+						<a href="modif">Modificar</a>
+					</li>
+					<li>
+						<a href="logout">Logout</a>
+					</li>
+				</ul>
+			</div>
+			<div id="body">
+				<div id="content">
+					<h2>Estadisticas</h2>
+					<center><div id="piechart" style="width: 900px; height: 500px;"></div></center>		
+				</div>
+			</div>
+			<!-- end of body-->
+			<div id="footer">
+				<div>
+					<div class="header"> <a href="register"><img class="logo" src="static/images/logo.png" width="187" height="37" alt="Python"></a>
+						<ul class="connect">
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/facebook/" class="facebook">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/twitter/" class="twitter">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/googleplus/" class="googleplus">&nbsp;</a>
+							</li>
+						  </ul>
+					</div>
+					<div class="body">
+						<ul class="navigation">
+							<li>
+								<a href="inicio">Home</a>
+							</li>
+							<li>
+								<a href="show">Mis datos</a>
+							</li>
+							<li>
+								<a href="modif">Modificar</a>
+							</li>
+							<li>
+								<a href="logout">Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="footnote"> &copy; Copyright &copy; 2011 Company name all rights reserved. Autor Rafael Carrasco </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>						

@@ -1,0 +1,119 @@
+$def with(user,noticias)
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+  <head>
+	<title>$user - Diseño de Aplicaciones para Internet</title>
+	<meta charset="utf-8">
+	<link href="static/css/style.css" rel="stylesheet" type="text/css">
+	<!--[if IE 7]>
+		<link href="css/ie7.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+  </head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header"> <a href="inicio" id="logo"><img src="static/images/logo.png" width="295" height="55" alt="Chronokeep Website Template"></a>
+				<ul class="navigation">
+					<li>
+						<a class="active" href="inicio">Home</a>
+					</li>
+					<li>
+						<a href="sobre">About</a>
+					</li>
+					<li>
+						<a href="show">Mis Datos</a>
+					</li>
+					<li>
+						<a href="logout">Logout</a>
+					</li>
+				</ul>
+			</div>
+			<!-- start of body-->
+			
+			<div id="body">
+				<div class="featured">
+					<p><h4>Bienvenido: $user</h4></p>
+					<ul>
+						<li>	
+							<p>
+							  $for i in noticias:
+							    $i
+							  <br>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div id="section">
+					<div class="footer">
+						<div class="body">
+							<ul class="article">
+								<li class="first">
+									<a href="inicio"><img src="static/images/logolit.png" width="256" height="166" alt="Diseño de Aplicaciones para Internet"></a>
+									<h2><a href="estadistica">Práctica 4-b</a></h2>
+									<p>
+										Google Charts es un servicio que nos permite integrar graficas estadisticas en nuestra pagina web, como graficas de tarta, ditribucion de puntos, graficas de barras, tablas dinamicas, graficas de lineas, lineas temporales, etc.
+									</p>
+									<a href="estadistica" class="readmore">Estadisticas</a>
+								</li>
+								<li>
+									<a href="inicio"><img src="static/images/logolit.png" width="256" height="166" alt="Diseño de Aplicaciones para Internet"></a>
+									<h2><a href="mapa">Práctica 4-b</a></h2>
+									<p>
+										Google Maps es el archi-conocido servicio de mapas interactivos online. Google ofrece la posibilidad de integrar mapas personalizados en nuestras paginas web mediante el uso de una API que se puede integrar en nuestro codigo HTML.
+
+									</p>
+									<a href="mapa" class="readmore">Mapa</a>
+								</li>
+								<li class="last">
+									<a href="inicio"><img src="static/images/logolit.png" width="256" height="166" alt="Diseño de Aplicaciones para Internet"></a>
+									<h2><a href="inicio">Práctica 4-c</a></h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.
+									</p>
+									<a href="inicio" class="readmore">Read More</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of body-->
+			<div id="footer">
+				<div>
+					<div class="header"> <a href="inicio"><img class="logo" src="static/images/logo.png" width="187" height="37" alt="Diseño de Aplicaciones para Internet"></a>
+						<ul class="connect">
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/facebook/" class="facebook">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/twitter/" class="twitter">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/googleplus/" class="googleplus">&nbsp;</a>
+							</li>
+						</ul>
+					</div>
+					<div class="body">
+						<ul class="navigation">
+							<li>
+								<a href="inicio">Home</a>
+							</li>
+							<li>
+								<a href="sobre">About</a>
+							</li>
+							<li>
+								<a href="show">Mis Datos</a>
+							</li>
+							<li>
+								<a href="logout">Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="footnote"> &copy; Copyright &copy; 2011 Company name all rights reserved. Autor Rafael Carrasco </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

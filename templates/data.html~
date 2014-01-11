@@ -1,0 +1,98 @@
+$def with(nom,ap,em,nu,d,m,a,dr,con,ve,fo)
+<html>
+<head>
+	<title>Datos - Diseño de Aplicaciones para Internet</title>
+	<meta charset="utf-8">
+	<link href="static/css/style.css" rel="stylesheet" type="text/css">
+	<!--[if IE 7]>
+		<link href="css/ie7.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+</head>
+<body>
+  <div id="background">
+		<div id="page">
+			<div id="header"> <a href="register" id="logo"><img src="static/images/logo.png" width="295" height="55" alt="Python"></a>
+				<ul class="navigation">
+					<li>
+						<a href="inicio">Home</a>
+					</li>
+					<li>
+						<a class="active" href="show">Mis datos</a>
+					</li>
+					<li>
+						<a href="modif">Modificar</a>
+					</li>
+					<li>
+						<a href="logout">Logout</a>
+					</li>
+				</ul>
+			</div>
+			<div id="body">
+				<div id="content">
+					<h2>Datos personales</h2>
+					<ul id="article">
+						<li>
+						    <p>
+						      <center>
+							<table>
+							  <tr>
+							    <td>
+							    <code>
+							      <b><p>Nombre: </b>$nom</p>
+							      <b><p>Apellido: </b>$ap</p>
+							      <b><p>Email: </b>$em</p>
+							      <b><p>Num Visa: </b>$nu</p>
+							      <b><p>Dia: </b>$d <b>Mes: </b>$m <b>Año: </b>$a</p>
+							      <b><p>Direccion: </b>$dr</p>
+							      <b><p>Contraseña: </b>$con</p>
+							      <b><p>Verificacion: </b>$ve</p>
+							      <b><p>Forma de pago: </b>$fo</p>
+							     </code>
+							     </td>
+							  </tr>
+							</table>
+						      </center>
+						     </p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- end of body-->
+			<div id="footer">
+				<div>
+					<div class="header"> <a href="register"><img class="logo" src="static/images/logo.png" width="187" height="37" alt="Python"></a>
+						<ul class="connect">
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/facebook/" class="facebook">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/twitter/" class="twitter">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/googleplus/" class="googleplus">&nbsp;</a>
+							</li>
+						</ul>
+					</div>
+					<div class="body">
+						<ul class="navigation">
+							<li>
+								<a href="inicio">Home</a>
+							</li>
+							<li>
+								<a href="show">Mis datos</a>
+							</li>
+							<li>
+								<a href="modif">Modificar</a>
+							</li>
+							<li>
+								<a href="logout">Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="footnote"> &copy; Copyright &copy; 2011 Company name all rights reserved. Autor Rafael Carrasco </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>						

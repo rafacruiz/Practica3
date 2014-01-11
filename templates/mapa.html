@@ -1,0 +1,197 @@
+$def with()
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map - Diseño de Aplicaciones para Internet</title>
+	<meta charset="utf-8">
+	<link href="static/css/style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	
+	<script type="text/javascript"
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_ZaKhlvWzvMScT4ij57MWhr9GdW-k8YM&sensor=false">
+	</script>
+	<script type="text/javascript">
+
+	// Funcion para obtener posicion actual.
+
+	var content = document.getElementById("geolocation-test");
+
+	if (navigator.geolocation) {
+	// Código de la aplicación
+
+	  function initialize(pos) {
+	    var myLatlng = new google.maps.LatLng(pos.coords.latitude,pos.coords.longitude)
+	    var mapOptions = {
+		center: myLatlng,
+		zoom: 18,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	      };
+	    var map = new google.maps.Map(document.getElementById("map-canvas"),
+	      mapOptions);
+
+	    var marker = new google.maps.Marker({
+	    position: myLatlng,
+	    map: map,
+	    title: 'Tú posición actual'
+	    });
+	    
+	    geocoder.geocode({ 'latLng': myLatlng },processGeocoder);
+	  
+	  }
+	  navigator.geolocation.getCurrentPosition(initialize);
+	  google.maps.event.addDomListener(window, 'load', initialize);
+
+	  function processGeocoder(results, status){
+
+	    if (status == google.maps.GeocoderStatus.OK) {
+	      if (results[0]) {
+		  var dire = document.forms[0].dir.value=results[0].formatted_address;
+		} else {
+		    error('Google no retorno resultado alguno.');
+		      }
+	    } else {
+		error("Geocoding fallo debido a : " + status);
+		  }
+	  }
+	  
+	}else
+	    {
+	      content.innerHTML = "Su navegador no soporta geolocalización.";
+	    }
+
+	// Funcion para obtener la direccion.
+	var dir = "";
+	window.onload = function(){
+	var content = document.getElementById("geolocation-test");
+	var address = document.getElementById("geolocation-address");
+
+	if (navigator.geolocation)
+	{
+		navigator.geolocation.getCurrentPosition(function(objPosition)
+		{
+			var lon = objPosition.coords.longitude;
+			var lat = objPosition.coords.latitude;
+			
+			
+			var latlng = new google.maps.LatLng(lat, lon);
+			geocoder = new google.maps.Geocoder();
+			geocoder.geocode({"latLng": latlng}, function(results, status)
+			{
+				if (status == google.maps.GeocoderStatus.OK)
+				{
+					if (results[0])
+					{
+						add = "<p><strong>Dirección: </strong>" + results[0].formatted_address + "</p>";
+						dir = "<iframe allowtransparency='true' frameborder='0' scrolling='no' class='twitter-share-button twitter-count-horizontal' tabindex='0' allowtransparency='true' src='http://platform.twitter.com/widgets/tweet_button.html?text=Tu posicion es "+ results[0].formatted_address +"&hashtags=Practica4DAI&count=horizontal&lang=gb&url= ' style='width: 130px; height: 30px;'></iframe>";
+					}
+					else
+					{
+						add = dir = "<p>No se ha podido obtener ninguna dirección en esas coordenadas.</p>";
+					}
+				}
+				else
+				{
+					add = dir = "<p>El Servicio de Codificación Geográfica ha fallado con el siguiente error: " + status + ".</p>";
+				}
+
+				content.innerHTML = add;
+				address.innerHTML = dir;
+			});
+		}, function(objPositionError)
+		{
+			switch (objPositionError.code)
+			{
+				case objPositionError.PERMISSION_DENIED:
+					content.innerHTML = "No se ha permitido el acceso a la posición del usuario.";
+				break;
+				case objPositionError.POSITION_UNAVAILABLE:
+					content.innerHTML = "No se ha podido acceder a la información de su posición.";
+				break;
+				case objPositionError.TIMEOUT:
+					content.innerHTML = "El servicio ha tardado demasiado tiempo en responder.";
+				break;
+				default:
+					content.innerHTML = "Error desconocido.";
+			}
+		}, {
+			maximumAge: 75000,
+			timeout: 15000
+		});
+	}
+	else
+	    {
+	      content.innerHTML = "Su navegador no soporta geolocalización.";
+	    }
+	}
+	</script>
+</head>
+<body>
+  <div id="background">
+		<div id="page">
+			<div id="header"> <a href="inicio" id="logo"><img src="static/images/logo.png" width="295" height="55" alt="Python"></a>
+				<ul class="navigation">
+					<li>
+						<a href="inicio">Home</a>
+					</li>
+					<li>
+						<a href="sobre">About</a>
+					</li>
+					<li>
+						<a href="show">Mis Datos</a>
+					</li>
+					<li>
+						<a href="logout">Logout</a>
+					</li>
+				</ul>
+			</div>
+			<div id="body">
+				<div id="content">
+					<h2>Map, posición actual</h2> 
+					  <div id="geolocation-address"><p>Twittea tu posición...</p></div>
+					<center><div id="map-canvas" style="width:800px; height:600px"></div></center>
+					<br>
+					  <div id="geolocation-test"><p>Obteniendo Dirección...</p></div>
+					
+				</div>
+			</div>
+			
+			<!-- end of body-->
+
+			<div id="footer">
+				<div>
+					<div class="header"> <a href="register"><img class="logo" src="static/images/logo.png" width="187" height="37" alt="Python"></a>
+						<ul class="connect">
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/facebook/" class="facebook">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/twitter/" class="twitter">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/googleplus/" class="googleplus">&nbsp;</a>
+							</li>
+						</ul>
+					</div>
+					<div class="body">
+						<ul class="navigation">
+							<li>
+								<a href="inicio">Home</a>
+							</li>
+							<li>
+								<a href="sobre">About</a>
+							</li>
+							<li>
+								<a href="show">Mis Datos</a>
+							</li>
+							<li>
+								<a href="logout">Logout</a>
+							</li>
+						 </ul>
+					</div>
+				</div>
+				<div id="footnote"> &copy; Copyright &copy; 2011 Company name all rights reserved. Autor Rafael Carrasco </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>						

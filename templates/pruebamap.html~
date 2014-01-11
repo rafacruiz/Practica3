@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+ 
+<meta charset="utf-8">
+ 
+<html>
+ 
+<script type="text/javascript">
+ 
+function pedirPosicion(pos) {
+ 
+   document.write("¡Hola! Estas en : "+pos.coords.latitude+ ","+pos.coords.longitude);
+ 
+   document.write(" Rango de localización de +/- "+pos.coords.accuracy+" metros");
+ 
+}
+ 
+navigator.geolocation.getCurrentPosition(pedirPosicion);
+ 
+</script>
+ 
+</html>

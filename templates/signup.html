@@ -1,0 +1,67 @@
+$def with(fnew,mej)
+<html>
+<head>
+	<title>Sign Up - Diseño de Aplicaciones para Internet</title>
+	<meta charset="utf-8">
+	<link href="static/css/style.css" rel="stylesheet" type="text/css">
+	<!--[if IE 7]>
+		<link href="css/ie7.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+</head>
+<body>
+  <div id="background">
+		<div id="page">
+			<div id="header"> <a href="inicio" id="logo"><img src="static/images/logo.png" width="295" height="55" alt="Python"></a>
+				<ul class="navigation">
+					<li>
+						<a class="active" href="/">Login</a>
+					</li>
+				</ul>
+			</div>
+			<div id="body">
+				<div id="content">
+					<h2>Resgistro</h2>
+					<ul id="article">
+						<li>
+							<p>
+							<form action="sign" method="POST">
+							  $if not fnew.valid: <p class="error">Intenta de Nuevo, Por favor</p>
+							 <center><b>$mej</b></center>
+							  $:fnew.render()
+							</form>
+							</p>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- end of body-->
+			<div id="footer">
+				<div>
+					<div class="header"> <a href="/"><img class="logo" src="static/images/logo.png" width="187" height="37" alt="Python"></a>
+						<ul class="connect">
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/facebook/" class="facebook">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/twitter/" class="twitter">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/googleplus/" class="googleplus">&nbsp;</a>
+							</li>
+						</ul>
+					</div>
+					<div class="body">
+						<ul class="navigation">
+							<li>
+								<a href="/">Login</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="footnote"> &copy; Copyright &copy; 2011 Company name all rights reserved. Autor Rafael Carrasco </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>						
