@@ -72,8 +72,8 @@ Fedora
 3º. Configuración
 
     Sistema Operativo: Ubuntu server 12.04
-    Procesador: 1 proc.
-    Ram: 256 MB
+    Procesador: 2 proc.
+    Ram: 1 GB
 
 4º. Configuración
 
