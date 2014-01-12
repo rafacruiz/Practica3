@@ -49,11 +49,15 @@ Una vez instalados todos los paquetes, mediante scp pasamos los documentos de nu
   ![web](https://dl.dropbox.com/s/au5b4jjizf42dvz/funciona.png?m=)
   
 
-Realizamos los mismo pasos con Fedora.
+Realizamos los mismo pasos con Guadalinex.
 
-Fedora
+Guadalinex v8
   
-  ![Fedora]()
+  ![Guada](https://dl.dropbox.com/s/wkju96yavmjbue2/instguada.png)
+  
+Y comprobamos que funciona correctamente.
+
+  ![guadafu](https://dl.dropbox.com/s/gy7l9au5wu60kzv/guadfun.png)
 
 ##Configuración máquinas virtuales
 
@@ -101,4 +105,24 @@ Con una carga de 1000 peticiones y 100 solicitudes concurrentemente.
  ![bench](https://dl.dropbox.com/s/5v92gsd50fanius/bench.png)
 
 ##Resultados
+
+
+Configuracion 1: 1 nucleo, 256 MB, ubutu Server
+
+ 
+  Request per second  37.55 seg              
+  Time per request  2662,943 ms
+ 
+
+
+
+
+
+Request per second = peticiones atendidas por segundo
+
+Time per request = tiempo medio que el servidor tarda en atender peticiones concurrentes
+
+time per request (mean, across all concurrent requests) = tiempo medio que el servidor tarda en atender una petición
+
+
 
