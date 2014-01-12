@@ -58,9 +58,48 @@ Fedora
 ##Configuración máquinas virtuales
 
 1º.
-  
   Sistema Operativo: Ubuntu server 12.04
 
   Procesador: 1 proc.
 
   Ram: 256 MB
+  
+2º.
+  Sistema Operativo: Ubuntu server 12.04
+
+  Procesador: 1 proc.
+
+  Ram: 256 MB
+
+3º.
+  Sistema Operativo: Ubuntu server 12.04
+
+  Procesador: 1 proc.
+
+  Ram: 256 MB
+
+4º.
+  Sistema Operativo: Fedora
+
+  Procesador: 1 proc.
+
+  Ram: 256 MB
+
+5º.
+  Sistema Operativo: Fedora
+
+  Procesador: 1 proc.
+
+  Ram: 256 MB
+
+6º.
+  
+  Sistema Operativo: Fedora
+
+  Procesador: 1 proc.
+
+  Ram: 256 MB
+  
+##Apache Benchmark
+
+
