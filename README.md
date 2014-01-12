@@ -29,17 +29,31 @@ Una vez tenemos VirtualBox instalado y en funcionamiento, empezamos con la insta
   
   ![Ubuntu](https://dl.dropbox.com/s/f1gu5vsoave6hu5/instSOUb.png)
   
-  Fedora
+
+Para poder utilizar los ejemplos tenemos que instalar los paquetes de Python, Webpy y Pymongo para su correcto funcionamiento.
   
-  ![Fedora]()
+  ![webpy](https://dl.dropbox.com/s/1spebp2m8gesyb5/webpyUbu.png)
+  
+  ![mongo](https://dl.dropbox.com/s/mqkwapnsaf5kxq7/mongo.png)
+  
+Una vez instalados todos los paquetes, mediante scp pasamos los documentos de nuestro ejemplo a nuestra máquina virutal y comprobamos que todo funciona correctamente.
+
+  Ejecutamos la web con el propio servidor que nos proporciona webpy y vemos que todo funciona.
+  
+  `python practica3.py`
+  
+  ![python](https://dl.dropbox.com/s/obdizkarwr6y3s3/correct.png)
+  
+  Y accedemos.
+  
+  ![web](https://dl.dropbox.com/s/au5b4jjizf42dvz/funciona.png?m=)
   
 
-Para poder utilizar los ejemplos instalamos Python, Webpy y Pymongo para su correcto funcionamiento y analizar el rendimiento.
+Realizamos los mismo pasos con Fedora.
+
+Fedora
   
-  
-  
-  
-  
+  ![Fedora]()
 
 ##Configuración máquinas virtuales
 
