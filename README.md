@@ -109,20 +109,17 @@ Con una carga de 1000 peticiones y 100 solicitudes concurrentemente.
 
 Configuracion 1: 1 nucleo, 256 MB, ubutu Server
 
+  >> Request per second  37.55 seg              
+  >> Time per request  2662,943 ms
  
-  Request per second  37.55 seg              
-  Time per request  2662,943 ms
- 
 
 
 
 
 
-Request per second = peticiones atendidas por segundo
-
-Time per request = tiempo medio que el servidor tarda en atender peticiones concurrentes
-
-time per request (mean, across all concurrent requests) = tiempo medio que el servidor tarda en atender una petición
+* Request per second = peticiones atendidas por segundo
+* Time per request = tiempo medio que el servidor tarda en atender peticiones concurrentes
+* Time per request (mean, across all concurrent requests) = tiempo medio que el servidor tarda en atender una petición
 
 
 
