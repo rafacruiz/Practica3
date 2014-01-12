@@ -77,21 +77,21 @@ Fedora
 
 4º. Configuración
 
-    Sistema Operativo: Fedora
+    Sistema Operativo: Guadalinex v8
     Procesador: 1 proc.
     Ram: 256 MB
 
 5º. Configuración
 
-    Sistema Operativo: Fedora
+    Sistema Operativo: Guadalinex v8
     Procesador: 2 proc.
     Ram: 512 MB
 
 6º. Configuración
 
-    Sistema Operativo: Fedora
-    Procesador: 3 proc.
-    Ram: 512 MB
+    Sistema Operativo: Guadalinex v8
+    Procesador: 2 proc.
+    Ram: 1 GB
   
 ##Apache Benchmark
 Para el análisis utilizamos Apache Benchmark, herramienta para la evaluación comparativa del Protocolo de transferencia de hipertexto servidor Apache (HTTP).
@@ -99,4 +99,6 @@ Para el análisis utilizamos Apache Benchmark, herramienta para la evaluación c
 Con una carga de 1000 peticiones y 100 solicitudes concurrentemente.
 
  ![bench](https://dl.dropbox.com/s/5v92gsd50fanius/bench.png)
+
+##Resultados
 
