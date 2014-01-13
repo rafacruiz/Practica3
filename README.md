@@ -7,7 +7,7 @@ Licencia GNU GENERAL PUBLIC LICENSE Version 3
 
 ##Introducción
 
-Vamos a crear una máquina virtual con VirtualBox utilizando dos sistemas operativos, Ubuntu Server y Fedora. Una vez instalados ambos sistemas operativos, vamos a ir cambiando de a distintas configuraciones de la máquina virtual para comprobar cual de ellas es la más optima.
+Vamos a crear una máquina virtual con VirtualBox utilizando dos sistemas operativos, Ubuntu Server y Guadalinex v8. Una vez instalados ambos sistemas operativos, vamos a ir cambiando de a distintas configuraciones de la máquina virtual para comprobar cual de ellas es la más optima.
 
 En cada una montaremos un ejemplo parecido al usado en prácticas anteriores. Un sencillo programa desarrollado en Python y utilizando Pymongo para base de datos.
 
