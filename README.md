@@ -124,6 +124,90 @@ Configuracion 1:
     </tr>
 </table>
 
+Configuracion 2: 
+
+  2 nucleo, 512 MB, ubutu Server
+
+<table>
+    <tr>
+        <td>Request per second</td>
+        <td>Time per request</td>
+        <td>Time per request (mean, across all concurrent requests)</td>
+    </tr>
+    <tr>
+        <td>39.37 seg</td>
+        <td>2539,826 ms</td>
+        <td>25,398 ms</td>
+    </tr>
+</table>
+
+Configuracion 3: 
+
+  2 nucleo, 1 GB, ubutu Server
+
+<table>
+    <tr>
+        <td>Request per second</td>
+        <td>Time per request</td>
+        <td>Time per request (mean, across all concurrent requests)</td>
+    </tr>
+    <tr>
+        <td>27.50 seg</td>
+        <td>3635,960 ms</td>
+        <td>36,360 ms</td>
+    </tr>
+</table>
+
+Configuracion 4: 
+
+  1 nucleo, 256 MB, Guadalinex v8
+
+<table>
+    <tr>
+        <td>Request per second</td>
+        <td>Time per request</td>
+        <td>Time per request (mean, across all concurrent requests)</td>
+    </tr>
+    <tr>
+        <td>23.04 seg</td>
+        <td>4340,220 ms</td>
+        <td>43,402 ms</td>
+    </tr>
+</table>
+
+Configuracion 5: 
+
+  2 nucleo, 512 MB, Guadalinex v8
+
+<table>
+    <tr>
+        <td>Request per second</td>
+        <td>Time per request</td>
+        <td>Time per request (mean, across all concurrent requests)</td>
+    </tr>
+    <tr>
+        <td>21.15 seg</td>
+        <td>4729,185 ms</td>
+        <td>47,292 ms</td>
+    </tr>
+</table>
+
+Configuracion 6: 
+
+  2 nucleo, 1 GB, Guadalinex v8
+
+<table>
+    <tr>
+        <td>Request per second</td>
+        <td>Time per request</td>
+        <td>Time per request (mean, across all concurrent requests)</td>
+    </tr>
+    <tr>
+        <td>37.55 seg</td>
+        <td>2662,943 ms</td>
+        <td>26,629 ms</td>
+    </tr>
+</table>
 
 Datos analizados:
 
