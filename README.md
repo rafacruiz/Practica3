@@ -118,7 +118,7 @@ Configuracion 1:
         <td>Time per request (mean, across all concurrent requests)</td>
     </tr>
     <tr>
-        <td>37.55 seg</td>
+        <td>37.55 / seg</td>
         <td>2662,943 ms</td>
         <td>26,629 ms</td>
     </tr>
@@ -135,7 +135,7 @@ Configuracion 2:
         <td>Time per request (mean, across all concurrent requests)</td>
     </tr>
     <tr>
-        <td>39.37 seg</td>
+        <td>39.37 / seg</td>
         <td>2539,826 ms</td>
         <td>25,398 ms</td>
     </tr>
@@ -152,7 +152,7 @@ Configuracion 3:
         <td>Time per request (mean, across all concurrent requests)</td>
     </tr>
     <tr>
-        <td>27.50 seg</td>
+        <td>27.50 / seg</td>
         <td>3635,960 ms</td>
         <td>36,360 ms</td>
     </tr>
@@ -169,7 +169,7 @@ Configuracion 4:
         <td>Time per request (mean, across all concurrent requests)</td>
     </tr>
     <tr>
-        <td>23.04 seg</td>
+        <td>23.04 / seg</td>
         <td>4340,220 ms</td>
         <td>43,402 ms</td>
     </tr>
@@ -186,7 +186,7 @@ Configuracion 5:
         <td>Time per request (mean, across all concurrent requests)</td>
     </tr>
     <tr>
-        <td>21.15 seg</td>
+        <td>21.15 / seg</td>
         <td>4729,185 ms</td>
         <td>47,292 ms</td>
     </tr>
@@ -203,7 +203,7 @@ Configuracion 6:
         <td>Time per request (mean, across all concurrent requests)</td>
     </tr>
     <tr>
-        <td>22.75 seg</td>
+        <td>22.75 / seg</td>
         <td>4394.899 ms</td>
         <td>43.949 ms</td>
     </tr>
@@ -216,6 +216,10 @@ Datos analizados:
 * Time per request (mean, across all concurrent requests) = tiempo medio que el servidor tarda en atender una petición
 
 ##Conclusión
+
+Como podemos observar en los resultados, las dos más eficientes hablando de tiempo de respuesta son la primera configuración (Ubuntu server) y la cuarta configuración (Guadalinex v8), ambas configuraciones más bajas hablando de hardware. Como podemos ver en la primera configuración el tiempo de peticiones atendidas por segundo es la intermedia de las tres de Ubuntu server, pero es la configuración más baja y con un tiempo medio bajo en atender el servidor una petición.
+
+Y la cuarta configuración (Guadalinex v8) pasa algo parecido con la primera configuración. Tiene el mayor número de peticiones atendidas por segundo y el tiempo medio que el servidor tarda en atender una petición más bajo y con la configuración hardware más baja.
 
 
 
