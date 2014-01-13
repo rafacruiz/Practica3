@@ -203,9 +203,9 @@ Configuracion 6:
         <td>Time per request (mean, across all concurrent requests)</td>
     </tr>
     <tr>
-        <td>37.55 seg</td>
-        <td>2662,943 ms</td>
-        <td>26,629 ms</td>
+        <td>22.75 seg</td>
+        <td>4394.899 ms</td>
+        <td>43.949 ms</td>
     </tr>
 </table>
 
@@ -214,6 +214,9 @@ Datos analizados:
 * Request per second = peticiones atendidas por segundo
 * Time per request = tiempo medio que el servidor tarda en atender peticiones concurrentes
 * Time per request (mean, across all concurrent requests) = tiempo medio que el servidor tarda en atender una petición
+
+##Conclusión
+
 
 
 
