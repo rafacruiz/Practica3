@@ -49,7 +49,7 @@ Una vez instalados todos los paquetes, mediante scp pasamos los documentos de nu
   ![web](https://dl.dropbox.com/s/au5b4jjizf42dvz/funciona.png?m=)
   
 
-Realizamos los mismo pasos con Guadalinex.
+Realizamos los mismos pasos con Guadalinex.
 
 Guadalinex v8
   
@@ -109,7 +109,7 @@ Con una carga de 1000 peticiones y 100 solicitudes concurrentemente.
 
 Configuracion 1: 
 
-  1 nucleo, 256 MB, ubutu Server
+  1 nucleo, 256 MB, ubuntu Server
 
 <table>
     <tr>
@@ -126,7 +126,7 @@ Configuracion 1:
 
 Configuracion 2: 
 
-  2 nucleo, 512 MB, ubutu Server
+  2 nucleo, 512 MB, ubuntu Server
 
 <table>
     <tr>
@@ -143,7 +143,7 @@ Configuracion 2:
 
 Configuracion 3: 
 
-  2 nucleo, 1 GB, ubutu Server
+  2 nucleo, 1 GB, ubuntu Server
 
 <table>
     <tr>
